@@ -10,112 +10,25 @@
     <title>
         Home
     </title>
-
-    <style>
-        body {
-            background-color: #379683;
-        }
-
-        .cards {
-            background-color: #5CDB95;
-        }
-
-        .card {
-            background-color: #8EE4AF;
-            color: #379683;
-
-        }
-
-        .card .card-title {
-            font-weight: bolder;
-        }
-
-        .card .card-image img {
-            height: 350px;
-            object-fit: cover;
-        }
-
-        .tabs {
-            background-color: #5CDB95;
-        }
-
-        .tabs .tab a:focus,
-        .tabs .tab a:focus.active {
-            background-color: #379683;
-        }
-
-        .sideebar {
-            display: inline-block;
-            margin-top: 30px;
-        }
-
-        .sideebar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 268px;
-
-
-        }
-
-        .sideebar li a {
-            display: block;
-            color: #fff;
-            padding: 40px 50px;
-            text-decoration: none;
-            border-radius: 0px 20px 20px 0px;
-
-
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 23px;
-            line-height: 34px;
-        }
-
-        .sideebar li a:hover {
-            background-color: #1A1F33;
-            text-decoration: underline #66FCF1 !important;
-            transition: all 0.2s ease-in;
-        }
-
-        .start {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-        }
-
-        .start .container .header {
-            display: inline-block;
-            font-weight: bolder;
-        }
-
-        .start .container .content {
-            display: inline-block;
-        }
-
-        .parallax-container {
-            height: 700px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 
 
 <body>
     <div class="parallax-container">
-    <div class="navbar-fixed">
-        <nav style="background-color: transparent;" id = "nav">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">Internet Web Programming</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <div class="navbar-fixed">
+            <nav style="background-color: transparent;" id="nav">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">Internet Web Programming</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-    
+
         <div class="parallax"><img src="1.jfif"></div>
     </div>
     <div class="start">
@@ -124,19 +37,11 @@
             <h3 class="header">Introduction</h3>
             <br>
             <span class="content">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                Lorem
-                Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                undoubtable
-                source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
-                Extremes
-                of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
-                popular
-                during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
-                in
-                section 1.10.32.
+                <b>What Does Web Programming Mean?</b> Web programming refers to the writing, markup and coding involved in Web development, which includes Web
+                content, Web client and server scripting and network security. The most common languages used for Web
+                programming are XML, HTML, JavaScript, Perl 5 and PHP. Web programming is different from just
+                programming, which requires interdisciplinary knowledge on the application area, client and server
+                scripting, and database technology
             </span>
         </div>
     </div>
@@ -166,6 +71,9 @@
         </div>
     </div>
 
+    <div class="parallax-container">
+        <div class="parallax"><img src="3.jpg"></div>
+    </div>
 
     <div class="cards">
         <div class="row">
@@ -190,7 +98,7 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">HTML<i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p>HTML is the standard markup language for creating Web pages.</p>
                     </div>
                 </div>
             </div>
@@ -208,7 +116,7 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">CSS<i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</p>
                     </div>
                 </div>
             </div>
@@ -226,7 +134,8 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">JavaScript<i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages
+                            interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).</p>
                     </div>
                 </div>
             </div>
@@ -248,7 +157,8 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Python<i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p>Python is an object-oriented (based around data), high-level (easier for humans to
+                            understand) programming language.</p>
                     </div>
                 </div>
             </div>
@@ -266,7 +176,8 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">PHP<i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p>PHP is known as general-purpose scripting language that can be used to develop dynamic and
+                            interactive websites</p>
                     </div>
                 </div>
             </div>
@@ -284,7 +195,8 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Ruby<i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p>The Ruby programming language was created by Yukihiro Matsumoto and is named after the
+                            birthstone of one his colleagues.</p>
                     </div>
                 </div>
             </div>
@@ -307,24 +219,24 @@
         $(document).ready(function () {
             $('.sidenav').sidenav();
         });
-        $(window).scroll(function(scroll) {
-    var navStart = $('.navopc-endchange').offset().top;
-    var scroll = $(window).scrollTop();
-    if (scroll > navStart) {
-        $('nav').addClass('opaque');
-    } else {
-        $('nav').removeClass('opaque');  
-    }
-});
+        $(window).scroll(function (scroll) {
+            var navStart = $('.navopc-endchange').offset().top;
+            var scroll = $(window).scrollTop();
+            if (scroll > navStart) {
+                $('nav').addClass('opaque');
+            } else {
+                $('nav').removeClass('opaque');
+            }
+        });
     </script>
     <script>
         var nav = document.getElementById('nav');
 
-        window.onscroll=function(){
-            if(window.pageYOffset>700){
+        window.onscroll = function () {
+            if (window.pageYOffset > 700) {
                 nav.style.background = "#379683";
             }
-            else{
+            else {
                 nav.style.background = "transparent";
             }
         }

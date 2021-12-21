@@ -1,0 +1,85 @@
+body {
+    background-color: #379683;
+}
+
+.cards {
+    background-color: #5CDB95;
+}
+
+.card {
+    background-color: #8EE4AF;
+    color: #379683;
+
+}
+
+.card .card-title {
+    font-weight: bolder;
+}
+
+.card .card-image img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.tabs {
+    background-color: #5CDB95;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background-color: #379683;
+}
+
+.sideebar {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.sideebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 268px;
+
+
+}
+
+.sideebar li a {
+    display: block;
+    color: #fff;
+    padding: 40px 50px;
+    text-decoration: none;
+    border-radius: 0px 20px 20px 0px;
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+}
+
+.sideebar li a:hover {
+    background-color: #1A1F33;
+    text-decoration: underline #66FCF1 !important;
+    transition: all 0.2s ease-in;
+}
+
+.start {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.start .container .header {
+    display: inline-block;
+    font-weight: bolder;
+}
+
+.start .container .content {
+    display: inline-block;
+}
+
+.parallax-container {
+    height: 700px;
+}
