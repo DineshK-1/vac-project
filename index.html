@@ -16,10 +16,6 @@
             background-color: #379683;
         }
 
-        .nav-wrapper {
-            background-color: #05386B;
-        }
-
         .cards {
             background-color: #5CDB95;
         }
@@ -97,25 +93,29 @@
         .start .container .content {
             display: inline-block;
         }
+
         .parallax-container {
-      height: 700px;
-    }
+            height: 700px;
+        }
     </style>
 </head>
 
 
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Internet Web Programming</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href=".html">Home</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <div class="parallax-container">
+    <div class="navbar-fixed">
+        <nav style="background-color: transparent;" id = "nav">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Internet Web Programming</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    
         <div class="parallax"><img src="1.jfif"></div>
     </div>
     <div class="start">
@@ -304,6 +304,30 @@
         $(document).ready(function () {
             $('.parallax').parallax();
         });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(window).scroll(function(scroll) {
+    var navStart = $('.navopc-endchange').offset().top;
+    var scroll = $(window).scrollTop();
+    if (scroll > navStart) {
+        $('nav').addClass('opaque');
+    } else {
+        $('nav').removeClass('opaque');  
+    }
+});
+    </script>
+    <script>
+        var nav = document.getElementById('nav');
+
+        window.onscroll=function(){
+            if(window.pageYOffset>700){
+                nav.style.background = "#379683";
+            }
+            else{
+                nav.style.background = "transparent";
+            }
+        }
     </script>
 
 </body>
