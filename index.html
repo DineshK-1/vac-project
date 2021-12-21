@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>
+        Home
+    </title>
+
+    <style>
+        body {
+            background-color: #379683;
+        }
+
+        .nav-wrapper {
+            background-color: #05386B;
+        }
+
+        .cards {
+            background-color: #5CDB95;
+        }
+        .card{
+            background-color: #8EE4AF;
+            color: #379683;
+            
+        }
+        
+        .card .card-title{
+            font-weight: bolder;
+        }
+        .tabs {
+            background-color: #5CDB95;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background-color: #379683;
+        }
+
+        .sideebar {
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .sideebar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 268px;
+
+
+        }
+
+        .sideebar li a {
+            display: block;
+            color: #fff;
+            padding: 40px 50px;
+            text-decoration: none;
+            border-radius: 0px 20px 20px 0px;
+
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 34px;
+        }
+
+        .sideebar li a:hover {
+            background-color: #1A1F33;
+            text-decoration: underline #66FCF1 !important;
+            transition: all 0.2s ease-in;
+        }
+
+        .start {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .start .container .header {
+            display: inline-block;
+            font-weight: bolder;
+        }
+
+        .start .container .content {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Internet Web Programming</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href=".html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="start">
+        <img src="start-1.png">
+        <div class="container">
+            <h3 class="header">Introduction</h3>
+            <br>
+            <span class="content">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+                Lorem
+                Ipsum passage, and going through the cites of the word in classical literature, discovered the
+                undoubtable
+                source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
+                Extremes
+                of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                popular
+                during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
+                in
+                section 1.10.32.
+            </span>
+        </div>
+    </div>
+
+
+    <div class="cards">
+        <div class="row">
+            <ul id="tabs-swipe-demo" class="tabs">
+                <li class="tab col s6"><a href="#test1">Frontend</a></li>
+                <li class="tab col s6"><a class="active" href="#test2">Backend</a></li>
+            </ul>
+        </div>
+
+    <div id="test1">
+            <div style="width: 31%; margin-left: 20px; display: inline-block;">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="html5.png">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">HTML<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">HTML<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="test2">
+            <div style="width: 31%; margin-left: 20px; display: inline-block;">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title center">PHP</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
+
+
+    </div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.tabs').tabs();
+        });
+
+    </script>
+
+</body>
+
+</html>
