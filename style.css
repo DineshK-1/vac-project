@@ -1,14 +1,23 @@
+html{
+    font-family: serif;
+}
+
+
+
 body {
-    background-color: #379683;
+    background-color: #2b6777;
 }
 
 .cards {
-    background-color: #5CDB95;
+    background-color: #2b6777;
+}
+.page-footer{
+    background-color: #2b6777;
 }
 
 .card {
-    background-color: #8EE4AF;
-    color: #379683;
+    background-color: #c8d8e4;
+    color: #2b6777;
 
 }
 
@@ -22,12 +31,26 @@ body {
 }
 
 .tabs {
-    background-color: #5CDB95;
+    background-color: #2b6777;
+}
+.tabs .indicator {
+    background-color:#fff;
+}
+.tabs .tab a{
+    color:#fff;
+}
+.tabs .tab a.active {
+    background-color:#888;
+    color:#000;
+}
+.tabs .tab a:hover {
+    background-color:#eee;
+    color:#000;
 }
 
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
-    background-color: #379683;
+    background-color: #c8d8e4;
 }
 
 .sideebar {
@@ -81,5 +104,5 @@ body {
 }
 
 .parallax-container {
-    height: 700px;
+    height: 600px;
 }
