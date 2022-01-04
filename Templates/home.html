@@ -2,8 +2,9 @@
 {%block title%}Home{%endblock%}
 
 {%block content%}
+{%load static%}
 <div class="start">
-    <img src="Images/start-1.png">
+    <img src="{%static 'Images/start-1.png'%}">
     <div class="container">
         <h3 class="header">Introduction</h3>
         <br>
@@ -18,7 +19,7 @@
     </div>
 </div>
 <div class="parallax-container">
-    <div class="parallax"><img src="Images/3.jpg"></div>
+    <div class="parallax"><img src="{%static 'Images/3.jpg'%}"></div>
 </div>
 <div class="start">
 
@@ -33,11 +34,11 @@
             make or edit anything dynamic on your website, such as a forum, a guestbook, or even a form submission.
         </span>
     </div>
-    <img src="Images/Uses.png" width="700px" height="700px">
+    <img src="{%static 'Images/Uses.png'%}" width="700px" height="700px">
 </div>
 
 <div class="parallax-container">
-    <div class="parallax"><img src="Images/data-centre.jpg"></div>
+    <div class="parallax"><img src="{%static 'Images/data-centre.jpg'%}"></div>
 </div>
 
 <div class="cards">
@@ -61,7 +62,7 @@
         <div style="width: 31%; margin-left: 20px; display: inline-block;">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Images/html5.png">
+                    <img class="activator" src="{%static 'Images/html5.png'%}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">HTML<i
@@ -89,7 +90,7 @@
         <div style="width: 31%; margin-left: 20px; display: inline-block;">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Images/css.png">
+                    <img class="activator" src="{%static 'Images/css.png'%}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">CSS<i
@@ -111,7 +112,7 @@
         <div style="width: 31%; margin-left: 20px; display: inline-block;">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Images/js.png">
+                    <img class="activator" src="{%static 'Images/js.png'%}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">JavaScript<i
@@ -145,7 +146,7 @@
         <div style="width: 31%; margin-left: 20px; display: inline-block;">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Images/Python.png">
+                    <img class="activator" src="{%static 'Images/Python.png'%}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Python<i
@@ -175,7 +176,7 @@
         <div style="width: 31%; margin-left: 20px; display: inline-block;">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Images/php-logo.png">
+                    <img class="activator" src="{%static 'Images/php-logo.png'%}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">PHP<i
@@ -201,7 +202,7 @@
         <div style="width: 31%; margin-left: 20px; display: inline-block;">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Images/ruby.png">
+                    <img class="activator" src="{%static 'Images/ruby.png'%}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Ruby<i
@@ -235,7 +236,7 @@
 </div>
 
 <div class="parallax-container">
-    <div class="parallax"><img src="Images/data-centre.jpg"></div>
+    <div class="parallax"><img src="{%static 'Images/data-centre.jpg'%}"></div>
 </div>
 
 {%endblock%}

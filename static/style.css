@@ -5,20 +5,22 @@ html{
 
 
 body {
-    background-color: #2b6777;
+    background-color: #0B0C10;
+    color: white;
 }
 
 .cards {
-    background-color: #2b6777;
+    background-color: #0B0C10;
+    color: white;
 }
 .page-footer{
-    background-color: #2b6777;
+    background-color: #1F2833;
+    color: white;
 }
 
 .card {
     background-color: #c8d8e4;
     color: #2b6777;
-
 }
 
 .card .card-title {
@@ -31,7 +33,7 @@ body {
 }
 
 .tabs {
-    background-color: #2b6777;
+    background-color: #1F2833;
 }
 .tabs .indicator {
     background-color:#fff;
@@ -51,41 +53,6 @@ body {
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
     background-color: #c8d8e4;
-}
-
-.sideebar {
-    display: inline-block;
-    margin-top: 30px;
-}
-
-.sideebar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 268px;
-
-
-}
-
-.sideebar li a {
-    display: block;
-    color: #fff;
-    padding: 40px 50px;
-    text-decoration: none;
-    border-radius: 0px 20px 20px 0px;
-
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 34px;
-}
-
-.sideebar li a:hover {
-    background-color: #1A1F33;
-    text-decoration: underline #66FCF1 !important;
-    transition: all 0.2s ease-in;
 }
 
 .start {
