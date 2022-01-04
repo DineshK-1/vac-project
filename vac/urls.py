@@ -19,8 +19,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from Home.views import *
+from Frontend.views import *
 
 urlpatterns =  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+[
     path('', Home, name = "Home"),
+    path('Frontend', Frontend, name = "Frontend"),
     path('admin/', admin.site.urls),
 ]

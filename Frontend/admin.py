@@ -1,3 +1,4 @@
 from django.contrib import admin
+from Frontend.models import FrontendModels
 
-# Register your models here.
+admin.site.register(FrontendModels)
