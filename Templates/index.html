@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>
+        {%block title%}{%endblock%}
+    </title>
+    {%load static%}
+    <link href="{%static 'style.css'%}" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="navbar-fixed">
+        <nav style="background-color: transparent;" id="nav">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center" style="color: black;">Internet Web Programming</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    {%block content%}
+    {%endblock%}
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Internet Web Programming</h5>
+                    <p class="grey-text text-lighten-4">Website Done By Team New Dawn.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Bibliography</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://materializecss.com/">Materialize</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.w3schools.com/">W3schools</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.tutorialspoint.com/index.htm">TutorialsPoint</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.wikipedia.org/">Wikipedia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Team New Dawn
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.tabs').tabs();
+        });
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(window).scroll(function (scroll) {
+            var navStart = $('.navopc-endchange').offset().top;
+            var scroll = $(window).scrollTop();
+            if (scroll > navStart) {
+                $('nav').addClass('opaque');
+            } else {
+                $('nav').removeClass('opaque');
+            }
+        });
+    </script>
+    <script>
+        var nav = document.getElementById('nav');
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 500) {
+                nav.style.background = "#ffffff";
+            }
+            else {
+                nav.style.background = "transparent";
+                nav.style.color = "#ffffff";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
