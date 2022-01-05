@@ -1,1 +1,1 @@
-web:gunicorn vac.wsgi
+web: gunicorn vac.wsgi
