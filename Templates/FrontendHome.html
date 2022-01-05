@@ -1,0 +1,196 @@
+{%extends 'index.html'%}
+{%block style%}
+<style>
+    .Frontend {
+        display: block;
+        background-color: #1F2833;
+        width: 100%;
+    }
+
+    .FrontendButton {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        justify-content: center;
+    }
+
+    .leftt {
+        display: inline-block;
+        padding: 3%;
+        vertical-align: middle;
+
+    }
+
+    .leftt:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .Rightt {
+        padding: 3%;
+        display: inline-block;
+        vertical-align: middle;
+        width: 40%;
+    }
+
+    pre {
+        text-align: left;
+    }
+</style>
+
+{%endblock%}
+{%block content%}
+<div class="sidebar close">
+    <div class="logo-details">
+        <i class='bx bx-broadcast'></i>
+        <span class="logo_name">New Dawn</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <div class="iocn-link">
+                <a href="#">
+                    <i class='bx bxl-html5'></i>
+                    <span class="link_name">HTML</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">HTML</a></li>
+                {%for i in ModelData_HTML%}
+                <li><a href="http://127.0.0.1:8000/Frontend/HTML/{{i.Title}}">{{i.Title}}</a></li>
+                {%endfor%}
+            </ul>
+        </li>
+
+        <li>
+            <div class="iocn-link">
+                <a href="#">
+
+                    <i class='bx bxl-css3'></i>
+                    <span class="link_name">CSS</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">CSS</a></li>
+                {%for i in ModelData_CSS%}
+                <li><a href="http://127.0.0.1:8000/Frontend/CSS/{{i.Title}}">{{i.Title}}</a></li>
+                {%endfor%}
+            </ul>
+        </li>
+
+        <li>
+            <div class="iocn-link">
+                <a href="#">
+                    <i class='bx bxl-javascript'></i>
+                    <span class="link_name">JS</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">JS</a></li>
+                {%for i in ModelData_JS%}
+                <li><a href="http://127.0.0.1:8000/Frontend/JS/{{i.Title}}">{{i.Title}}</a></li>
+                {%endfor%}
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<section class="home-section" style="height: 100%;">
+    <div class="home-content">
+        <i class='bx bx-menu'></i>
+        <span class="text">Frontend Languages</span>
+    </div>
+    <hr>
+
+    <div class="contentt center" id="contenttt">
+        <div class="Frontend">
+            <div class="leftt">
+                <h3 style="font-weight: bold;">HTML</h3>
+                <p>The Language for Building Web Pages</p>
+                <a href="http://127.0.0.1:8000/Frontend/HTML/Introduction"><button class="FrontendButton" style="background-color: #45A29E;">Learn HTML</button></a>
+                <a href="https://www.w3schools.com/html/default.asp"><button class="FrontendButton" style="color: black;">HTML Reference</button></a>
+            </div>
+            <div class="Rightt">
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;body&gt;
+                        
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                        
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+            </div>
+        </div>
+        <div class="Frontend">
+            <div class="leftt">
+                <h3 style="font-weight: bold;">CSS</h3>
+                <p>The Language for Building Web Pages</p>
+                <a href="http://127.0.0.1:8000/Frontend/CSS/CSS%20Introduction"><button class="FrontendButton" style="background-color: #45A29E;">Learn CSS</button></a>
+                <a href="https://www.w3schools.com/css/default.asp"><button class="FrontendButton" style="color: black;">CSS Reference</button></a>
+            </div>
+            <div class="Rightt">
+                <pre>
+body {
+    background-color: lightblue;
+}
+                      
+h1 {
+    color: white;
+    text-align: center;
+}
+                    </pre>
+            </div>
+        </div>
+        <div class="Frontend">
+            <div class="leftt">
+                <h3 style="font-weight: bold;">JS</h3>
+                <p>The Language for Building Web Pages</p>
+                <a href="http://127.0.0.1:8000/Frontend/JS/Introduction"><button class="FrontendButton" style="background-color: #45A29E;">Learn JS</button></a>
+                <a href="https://www.w3schools.com/js/default.asp"><button class="FrontendButton" style="color: black;">JS Reference</button></a>
+            </div>
+            <div class="Rightt">
+                <pre>
+&lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;
+
+lt;script&gt;
+function myFunction() {
+    let x = document.getElementById(&quot;demo&quot;);
+    x.style.fontSize = &quot;25px&quot;;
+    x.style.color = &quot;red&quot;;
+    }
+&lt;/script&gt;
+                    </pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+            let arrowParent = e.target.parentElement.parentElement;
+            arrowParent.classList.toggle("showMenu");
+        });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    });
+</script>
+{%endblock%}
