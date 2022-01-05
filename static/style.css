@@ -331,7 +331,7 @@ pre {
 
 .home-section {
     position: relative;
-    background: #E4E9F7;
+    background: #0B0C10;
     height: 100vh;
     left: 260px;
     width: calc(100% - 260px);
@@ -351,7 +351,7 @@ pre {
 
 .home-section .home-content .bx-menu,
 .home-section .home-content .text {
-    color: #11101d;
+    color: white;
     font-size: 35px;
 }
 
@@ -370,3 +370,9 @@ pre {
         display: none;
     }
 }
+
+.contentt{
+    color:white;
+    padding: 30px;
+}
+    
