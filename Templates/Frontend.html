@@ -18,7 +18,7 @@
             <ul class="sub-menu">
                 <li><a class="link_name" href="#">HTML</a></li>
                 {%for i in ModelData_HTML%}
-                <li><a href="http://vac-newdawn.herokuapp.com/Frontend/HTML/{{i.Title}}">{{i.Title}}</a></li>
+                <li><a href="https://vac-newdawn.herokuapp.com/Frontend/HTML/{{i.Title}}">{{i.Title}}</a></li>
                 {%endfor%}
             </ul>
         </li>
@@ -35,7 +35,7 @@
             <ul class="sub-menu">
                 <li><a class="link_name" href="#">CSS</a></li>
                 {%for i in ModelData_CSS%}
-                <li><a href="http://vac-newdawn.herokuapp.com/Frontend/CSS/{{i.Title}}">{{i.Title}}</a></li>
+                <li><a href="https://vac-newdawn.herokuapp.com/Frontend/CSS/{{i.Title}}">{{i.Title}}</a></li>
                 {%endfor%}
             </ul>
         </li>
@@ -51,7 +51,7 @@
             <ul class="sub-menu">
                 <li><a class="link_name" href="#">JS</a></li>
                 {%for i in ModelData_JS%}
-                <li><a href="http://vac-newdawn.herokuapp.com/Frontend/JS/{{i.Title}}">{{i.Title}}</a></li>
+                <li><a href="https://vac-newdawn.herokuapp.com/Frontend/JS/{{i.Title}}">{{i.Title}}</a></li>
                 {%endfor%}
             </ul>
         </li>
@@ -70,7 +70,7 @@
 </section>
 
 <script type="text/javascript">
-    var href = "http://vac-newdawn.herokuapp.com/uploads/{{PageData.Description}}"
+    var href = "https://vac-newdawn.herokuapp.com/uploads/{{PageData.Description}}"
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", href, false);
     xmlhttp.send();
