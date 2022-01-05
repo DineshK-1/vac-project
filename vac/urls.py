@@ -23,6 +23,6 @@ from Frontend.views import *
 
 urlpatterns =  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+[
     path('', Home, name = "Home"),
-    path('Frontend', Frontend, name = "Frontend"),
+    path('Frontend/<str:_Type>/<str:_Title>', Frontend),
     path('admin/', admin.site.urls),
-]
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
