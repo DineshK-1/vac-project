@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def Backend(request):
+    return render(request, "Backend.html")
