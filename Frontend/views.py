@@ -3,7 +3,10 @@ from .models import FrontendModels
 import requests
 
 def Frontend(request, _Type, _Title):
+    All_Objects = FrontendModels.objects.all
+    HTML = FrontendModels.objects.filter(Type  = "HTML")
+    CSS = FrontendModels.objects.filter(Type  = "CSS")
+    JS = FrontendModels.objects.filter(Type  = "JS")
+
     Data = FrontendModels.objects.get(Type = _Type, Title = _Title)
-    r = requests.get( "http://127.0.0.1:8000/uploads/" + str(Data.Description), allow_redirects=False)
-    PageContent = r.content
-    return render(request, "Frontend.html", {"ModelData": FrontendModels.objects.all, "PageData":Data, "PageContent": PageContent})
+    return render(request, "Frontend.html", {"ModelData_HTML": HTML,"ModelData_CSS": CSS,"ModelData_JS": JS, "PageData":Data})
