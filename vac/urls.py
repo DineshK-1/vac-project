@@ -20,9 +20,14 @@ from django.conf.urls.static import static
 
 from Home.views import *
 from Frontend.views import *
+from Backend.views import *
+from Webversions.views import *
 
 urlpatterns =  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+[
     path('', Home, name = "Home"),
+    path('Frontend', FrontendHome, name = "Frontend"),
+    path('Backend', Backend, name = "Backend"),
+    path('Webversions', Webversions, name = "Webversions"),
     path('Frontend/<str:_Type>/<str:_Title>', Frontend),
     path('admin/', admin.site.urls),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
