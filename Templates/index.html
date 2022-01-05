@@ -22,10 +22,12 @@
     <div class="navbar-fixed">
         <nav style="background-color: transparent;" id="nav">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo center" style="color: black;">Internet Web Programming</a>
+                <a href="{%url 'Home'%}" class="brand-logo" style="color: white; padding-left: 100px;">Internet Web Programming</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-                </ul>
+                    <li><a href="{%url 'Frontend'%}">Frontend</a></li>
+                    <li><a href="{%url 'Backend'%}">Backend</a></li>
+                    <li><a href="{%url 'Webversions'%}">Web versions</a></li>
+                  </ul>
             </div>
         </nav>
     </div>
@@ -59,6 +61,21 @@
         </div>
     </footer>
 
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -88,7 +105,7 @@
 
         window.onscroll = function () {
             if (window.pageYOffset > 500) {
-                nav.style.background = "#ffffff";
+                nav.style.background = "#0B0C10";
             }
             else {
                 nav.style.background = "transparent";
