@@ -1,1 +1,87 @@
 {%extends 'index.html'%}
+
+{%block content%}
+<div class="row">
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s6"><a href="#test1">Python</a></li>
+            <li class="tab col s6"><a href="#test2">SQL</a></li>
+        </ul>
+    </div>
+    <div id="test1" class="col s12">
+        <div class="center">This website uses Django framework which relies on python to do all the work in backend.<br>
+            Source Code:<a href="https://github.com/DineshK-1/vac-project">https://github.com/DineshK-1/vac-project</a>
+        </div>
+    </div>
+    <div id="test2" class="col s12">
+        <h4>Introduction to SQL</h4>
+        <hr>
+        <p>SQL is a standard language for accessing and manipulating databases.</p>
+        <hr>
+        <h2>What is SQL?</h2>
+        <ul>
+            <li>SQL stands for Structured Query Language</li>
+            <li>SQL lets you access and manipulate databases</li>
+            <li>SQL became a standard of the American National Standards Institute (ANSI)
+                in 1986, and of the International Organization for Standardization (ISO) in
+                1987</li>
+        </ul>
+        <hr>
+        <h2>What Can SQL do?</h2>
+        <ul>
+            <li> SQL can execute queries against a database</li>
+            <li>SQL can retrieve data from a database</li>
+            <li>SQL can insert records in a database</li>
+            <li>SQL can update records in a database</li>
+            <li>SQL can delete records from a database</li>
+            <li>SQL can create new databases</li>
+            <li>SQL can create new tables in a database</li>
+            <li>SQL can create stored procedures in a database</li>
+            <li>SQL can create views in a database</li>
+            <li>SQL can set permissions on tables, procedures, and views</li>
+        </ul>
+        <hr>
+        <div class="center">
+            <h4>Test it out!</h4>
+        </div>
+        <div class="tablee">
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Text</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                {%for i in Data%}
+                <tbody>
+                    <tr>
+                        <td>{{i.username}}</td>
+                        <td>{{i.Text}}</td>
+                        <td>{{i.Date}}</td>
+                    </tr>
+                </tbody>
+                {%endfor%}
+            </table>
+        </div>
+        <hr>
+        <div class="form">
+            <form method="POST" id="form" action="{%url 'Backend'%}">
+                {%csrf_token%}
+                <label for="">Name</label>
+                <input type="text" name="username">
+                <label for="">Random Text</label>
+                <input type="text" name="textt">
+                <button class="FrontendButton" style="background-color: #45A29E;" onclick="Submit()">SUBMIT</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function Submit() {
+        document.getElementById("form").submit();
+    }
+</script>
+{%endblock%}

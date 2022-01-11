@@ -375,4 +375,56 @@ pre {
     color:white;
     padding: 30px;
 }
-    
+
+.Frontend {
+    display: block;
+    background-color: #1F2833;
+    width: 100%;
+}
+
+.FrontendButton {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    justify-content: center;
+}
+
+.leftt {
+    display: inline-block;
+    padding: 3%;
+    vertical-align: middle;
+
+}
+
+.leftt:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.Rightt {
+    padding: 3%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+}
+
+pre {
+    text-align: left;
+}
+
+.tablee{
+    background-color: #1F2833;
+    padding: 20px;
+    border-radius: 20px;
+}
+.form{
+    background-color: #1F2833;
+    padding: 20px;
+    border-radius: 20px;
+}
